@@ -1,0 +1,310 @@
+/* Your Code Here */
+
+.rectangle {
+  height: 50px;
+  width: 100%;
+  background-color: #a92534;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.logo {
+  width: 80%;
+  height: 80%;
+  margin-left: 30px;
+}
+
+.pageTitle {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  margin: 40px;
+  margin-left: 350px;
+}
+
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #dedede;
+  border-width: 2px;
+}
+
+.topnav a {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #ca897c;
+  text-align: center;
+  padding: 14px 90px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #a92534;
+}
+
+.homePic {
+  width: 100%;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.textBoxTitle {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 10px;
+}
+
+.textBoxBody {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.footnav {
+  background-color: #a92534;
+  overflow: hidden;
+}
+
+.footnav a {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #c7c5c9;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 14px 75px;
+}
+
+.footnav a:hover {
+  color: #ffffff;
+}
+
+.footnav p {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 14px 75px;
+}
+
+.page-head {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  margin: 40px;
+}
+
+.all-shirts {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 30% 30% 30%;
+  margin: 50px;
+}
+
+.shirt-panel {
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.shirt-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shirt-title {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 10px;
+}
+
+.shirt-colors {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  margin: 10px;
+}
+
+.shirt-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 50px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  cursor: pointer;
+}
+
+.shirt-button:hover {
+  color: #ffffff;
+}
+
+.shirt-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.shirt-buttons a {
+  text-decoration: none;
+}
+
+.page-body-details {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 50px;
+}
+
+.shirt-text-details {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 20px 80px;
+}
+
+.side-container,
+.color-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 80px;
+}
+
+.side-container a,
+.color-container a {
+  text-decoration: none;
+}
+
+.side-label,
+.color-label {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  margin: 20px;
+}
+
+.front-button,
+.back-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.front-button:hover,
+.back-button:hover {
+  color: #ffffff;
+}
+
+.button-color {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #000000;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.button-color:hover {
+  color: #c7c5c9;
+}
+
+.scotty {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+  opacity: 0.5;
+}
+
+.error-text {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-align: center;
+}
+
+.quick-view-body {
+  background-color: #d8d8d8;
+  margin: 10px 0px;
+  padding: 10px 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.quick-view-img {
+  width: 20%;
+  height: 20%;
+}
+
+.quick-view-text-body {
+  margin: 0px 20px;
+}
+
+.quick-view-title {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #000000;
+}
+
+.shirt-text-quickview {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 20px 0px;
+}
+
+.close-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 35px;
+}
+
+.close-button:hover {
+  color: #ffffff;
+}

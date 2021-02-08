@@ -1,0 +1,221 @@
+#screen {
+    display: flex;
+    flex-direction: row;
+}
+
+#palette {
+    width: 350px;
+    max-width: 350px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#workarea-canvas {
+    position: absolute;
+    z-index: 0;
+}
+
+#workarea-svg {
+    position: absolute;
+    z-index: 9;
+}
+
+#layerTitle,
+#layerButton,
+#modeTitle,
+#borderColorTitle,
+#fillColorTitle,
+#borderWidthTitle,
+#deleteTitle {
+    font-family: "Catamaran", sans-serif;
+}
+
+#modeBody {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    z-index: 0;
+}
+
+.modeItem {
+    margin: 0px 5px;
+    padding: 10px;
+}
+
+
+/* .modeItem.selected {
+    border: 2px solid blue;
+    border-radius: 7px;
+    padding: 10px;
+} */
+
+.modeItemContainer {
+    margin: 0px 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.modeItemContainer.selected {
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    border-radius: 7px;
+}
+
+#modeCursor,
+#modeLine {
+    width: 30px;
+    margin: -5px;
+}
+
+#modeSquare {
+    width: 30px;
+    height: 30px;
+    background: green;
+    border: 3px solid black;
+    margin: -5px;
+    /* background-clip: content-box; */
+}
+
+#modeCircle {
+    width: 30px;
+    height: 30px;
+    background: green;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin: -5px;
+    /* background-clip: content-box; */
+}
+
+
+/* Slider */
+
+.slidecontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#sliderLabel {
+    margin: 10px;
+    font-family: "Catamaran", sans-serif;
+}
+
+.rowOne,
+.rowTwo {
+    display: flex;
+    flex-direction: row;
+}
+
+.borderColorItemContainer,
+.fillColorItemContainer {
+    margin: auto;
+}
+
+.borderColorItemContainer.selected,
+.fillColorItemContainer.selected {
+    margin: auto;
+    border: 2px solid blue;
+    border-radius: 7px;
+}
+
+.borderColorOption,
+.fillColorOption {
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#noneOptionBorder,
+#noneOptionFill {
+    font-family: "Catamaran", sans-serif;
+    height: 30px;
+    width: 50px;
+    margin: 20px;
+}
+
+#whiteOptionBorder,
+#whiteOptionFill {
+    background-color: white;
+}
+
+#grayOptionBorder,
+#grayOptionFill {
+    background-color: gray;
+}
+
+#blackOptionBorder,
+#blackOptionFill {
+    background-color: black;
+}
+
+#yellowOptionBorder,
+#yellowOptionFill {
+    background-color: yellow;
+}
+
+#redOptionBorder,
+#redOptionFill {
+    background-color: red;
+}
+
+#blueOptionBorder,
+#blueOptionFill {
+    background-color: blue;
+}
+
+#greenOptionBorder,
+#greenOptionFill {
+    background-color: green;
+}
+
+#deleteBody {
+    display: flex;
+    flex-direction: row;
+}
+
+#deleteButton,
+#deleteAllButton {
+    margin: 0px 20px;
+    padding: 0px 30px;
+}
+
+#fillColorBody,
+#bwBody,
+#borderColorBody {
+    margin: auto;
+    z-index: 0;
+}
+
+#fcDisabledDiv,
+#bcDisabledDiv {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    height: 148px;
+    width: 350px;
+}
+
+#bwDisabledDiv {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    height: 38px;
+    width: 350px;
+}
+
+#modeDisabledDiv {
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+    visibility: hidden;
+    height: 74px;
+    width: 350px;
+}

@@ -1,0 +1,865 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "Catamaran";
+  src: local("Catamaran"),
+    url(./fonts/Catamaran-VariableFont_wght.ttf) format("truetype");
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Your Code Here */
+.rectangle {
+  height: 50px;
+  width: 100%;
+  background-color: #a92534;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-left: 100px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* cart */
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  margin-left: 130px;
+  border: 2px solid #a92534;
+  border-radius: 20px;
+  background-color: #a92534;
+}
+
+.cart-container:hover {
+  cursor: pointer;
+}
+
+.cart {
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+  border: 2px solid #a92534;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cart-label {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  margin: 0px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pageTitle {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  margin: 40px;
+  margin-left: 100px;
+}
+
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #dedede;
+  border-width: 2px;
+}
+
+.topnav p {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #ca897c;
+  text-align: center;
+  padding: 14px 85px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  transition: 300ms;
+  margin: 0px;
+}
+
+.topnav p:hover {
+  border-bottom: 3px solid #a92534;
+  cursor: pointer;
+}
+
+.homePic {
+  width: 100%;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.textBoxTitle {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 10px;
+}
+
+.textBoxBody {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  line-height: 20px;
+  margin: 10px;
+}
+
+.footnav {
+  background-color: #a92534;
+  overflow: hidden;
+}
+
+.footnav p {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #c7c5c9;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 14px 75px;
+}
+
+.footnav p:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.author {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 14px 75px;
+}
+.author:hover {
+  color: initial;
+  cursor: initial;
+}
+
+.page-head {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+  margin: 40px;
+}
+
+.all-shirts {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 30% 30% 30%;
+  margin: 50px;
+}
+
+.shirt-panel {
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.shirt-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shirt-img-details {
+  height: 500px;
+  border-radius: 10px;
+}
+
+.shirt-title {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 10px;
+}
+
+.shirt-colors {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  margin: 10px;
+}
+
+.shirt-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 160px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  cursor: pointer;
+}
+
+.shirt-button:hover {
+  color: #ffffff;
+}
+
+.shirt-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.shirt-buttons a {
+  text-decoration: none;
+}
+
+.page-body-details {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 50px;
+}
+
+.shirt-text-details {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 20px 80px;
+}
+
+.side-container,
+.color-container,
+.quantity-container,
+.size-container,
+.add-cart-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 80px;
+}
+
+.side-container a,
+.color-container a,
+.quantity-container a,
+.size-container a,
+.add-cart-container a {
+  text-decoration: none;
+}
+
+.side-label,
+.color-label,
+.quantity-label,
+.size-label,
+.price-label {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #808080;
+  margin: 20px;
+}
+
+.quantity-dropdown,
+.size-dropdown {
+  padding: 5px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 16px;
+  border: 3px solid #a32b24;
+  border-radius: 10px;
+}
+
+.front-button,
+.back-button,
+.add-cart-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.disabled-add-cart-button {
+  background-color: #c7c5c9;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: gray;
+  text-transform: capitalize;
+}
+
+.front-button:hover,
+.back-button:hover,
+.add-cart-button:hover {
+  color: #ffffff;
+}
+
+.button-color {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #000000;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.button-color:hover {
+  color: #c7c5c9;
+}
+
+.scotty {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+  opacity: 0.5;
+}
+
+.error-text {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-align: center;
+}
+
+.quick-view-body {
+  background-color: #d8d8d8;
+  margin: 10px 0px;
+  padding: 10px 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.quick-view-img {
+  width: 20%;
+  height: 20%;
+}
+
+.quick-view-text-body {
+  margin: 0px 20px;
+}
+
+.quick-view-title {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #000000;
+}
+
+.shirt-text-quickview {
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #b86d62;
+  margin: 20px 0px;
+}
+
+.close-button {
+  background-color: #a92534;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: lighter;
+  color: #c7c5c9;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 35px;
+}
+
+.close-button:hover {
+  color: #ffffff;
+}
+
+/* cart */
+.shopcart-container {
+  margin: 30px 5px 30px 100px;
+}
+
+.shopcart-header {
+  font-family: "Catamaran", sans-serif;
+  font-size: 40px;
+}
+
+.shopcart-body {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.shopcart-body-left {
+  /* margin: 20px; */
+  margin-right: 100px;
+}
+
+.cart-item-img {
+  cursor: pointer;
+}
+
+.color-label-value,
+.size-label-value,
+.price-label-value {
+  font-family: "Catamaran", sans-serif;
+  color: #a92534;
+  margin-top: 20px;
+}
+
+/* order summary panel */
+
+.orderpanel-mainpanel {
+  border: 2px solid #a92534;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+}
+
+.orderpanel-header {
+  font-family: "Catamaran", sans-serif;
+}
+
+.orderpanel-body-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.orderpanel-body-left {
+  margin-right: 120px;
+}
+
+.orderpanel-summary-left,
+.orderpanel-ship-left,
+.orderpanel-total-left {
+  font-family: "Catamaran", sans-serif;
+  color: gray;
+}
+
+.orderpanel-summary-right,
+.orderpanel-ship-right,
+.orderpanel-total-right {
+  font-family: "Catamaran", sans-serif;
+  color: #a92534;
+  text-align: right;
+}
+
+.orderpanel-hr {
+  border: 1px solid #a92534;
+}
+
+.orderpanel-checkout,
+.orderpanel-shopping {
+  font-family: "Catamaran", sans-serif;
+  text-align: center;
+  padding: 20px;
+  size: 20px;
+  background-color: #a92534;
+  border: 2px solid #a92534;
+  border-radius: 20px;
+  color: #c7c5c9;
+}
+
+.orderpanel-shopping {
+  margin: 20px;
+}
+
+.orderpanel-checkout:hover,
+.orderpanel-shopping:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* shopping item panel */
+
+.cart-item-hr {
+  border: 1px solid #a92534;
+}
+
+.cart-item-header {
+  font-family: "Catamaran", sans-serif;
+  font-size: 32px;
+}
+
+.cart-item-body {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+.cart-item-side-container,
+.cart-item-color-container,
+.cart-item-quantity-container,
+.cart-item-size-container,
+.cart-item-add-cart-container,
+.cart-item-price-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 40px;
+}
+.cart-item-remove-container {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 50px;
+}
+
+.remove-label {
+  font-family: "Catamaran", sans-serif;
+  text-align: center;
+  padding: 10px;
+  size: 20px;
+  background-color: #a92534;
+  border: 2px solid #a92534;
+  border-radius: 20px;
+  color: #c7c5c9;
+}
+
+.remove-label:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.empty-message {
+  font-family: "Catamaran", sans-serif;
+  width: 800px;
+  font-weight: lighter;
+}
+
+/* PicturePage */
+
+.picture-container {
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+}
+
+.picture-right-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  width: 580px;
+  text-align: center;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-text {
+  width: 500px;
+  height: 46px;
+  /* border: 1px solid #c7c5c9;
+  border-radius: 3px; */
+  border: 1px solid #c7c5c9;
+  border-radius: 0px;
+  font-family: "Catamaran", sans-serif;
+}
+
+.search-button {
+  height: 50px;
+  background-color: #767676;
+  border: none;
+  border-radius: 0px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.search-button-text {
+  color: white;
+  font-family: "Catamaran", sans-serif;
+  padding: 0px 10px;
+}
+
+.image-list-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  max-height: 700px;
+}
+
+.image-list {
+  /* column-count: 3;
+  text-align: center; */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 130px 130px 130px 130px;
+  /* 
+  /* height: 600px; */
+  /* overflow-y: scroll; */
+}
+
+.image-container {
+  box-sizing: border-box;
+  /* width: 33%; */
+  /* width: 160px; */
+  height: 200px;
+  line-height: 200px;
+  /* margin-bottom: 10px; */
+  /* display: block; */
+  background-color: #f5f5f5;
+  display: table-cell;
+}
+
+.image {
+  /* box-sizing: border-box; */
+  /* height: 300px; */
+  /* margin-top: 10px; */
+  vertical-align: middle;
+  width: 100%;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 2px #c5c5c5;
+}
+
+.show-more-button {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  margin-left: 240px;
+  margin-top: 30px;
+}
+
+.show-more-button:hover {
+  cursor: pointer;
+  background: gray;
+}
+
+.show-more-text {
+  font-family: "Catamaran", sans-serif;
+  color: gray;
+  text-align: center;
+  margin: 0px;
+}
+
+.show-more-text:hover {
+  color: white;
+}
+
+.show-more-button-disabled {
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  margin-left: 240px;
+  margin-top: 30px;
+}
+
+.show-more-text-disabled {
+  font-family: "Catamaran", sans-serif;
+  color: #c5c5c5;
+  text-align: center;
+  margin: 0px;
+}
+
+.picture-shirt-page {
+  background-color: #f5f5f5;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.picture-shirt {
+  width: 300px;
+  margin-top: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.picture-image {
+  position: absolute;
+  top: 140px;
+  left: 100px;
+  width: 100px;
+}
+
+.picture-shirt:hover {
+  cursor: pointer;
+}
+
+.picture-image:hover {
+  cursor: pointer;
+}
+
+.picture-price {
+  font-family: "Catamaran", sans-serif;
+  color: #a92534;
+  font-size: 40px;
+}
+.picture-quantity-container,
+.picture-size-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-no-results {
+  font-family: "Catamaran", sans-serif;
+  color: #a92534;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Authentication */
+
+.auth-container {
+  width: 100%;
+  height: 100px;
+}
+
+.auth-button {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 42%;
+  width: 200px;
+  height: 50px;
+  box-shadow: 1px 1px 2px 2px #c5c5c5;
+  border: 1px solid none;
+  border-radius: 5px;
+}
+
+.auth-button:hover {
+  cursor: pointer;
+}
+
+.log-in-text-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.log-in-img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.log-in-text {
+  font-family: "Catamaran", sans-serif;
+  margin: 12px;
+}
+
+.log-out-text {
+  font-family: "Catamaran", sans-serif;
+  padding: 12px;
+}
+
+/* Search filtering */
+
+.augment-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0px;
+}
+
+.sort-label-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 0px;
+}
+
+.sort-dropdown-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 20px;
+  border: 1px solid gray;
+}
+
+.sort-value-search {
+  font-family: "Catamaran", sans-serif;
+}
+
+.color-label-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 0px;
+}
+
+.color-dropdown-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 20px;
+  border: 1px solid gray;
+}
+
+.color-value-search {
+  font-family: "Catamaran", sans-serif;
+}
+
+.orientation-label-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 0px;
+}
+
+.orientation-dropdown-search {
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 20px;
+  border: 1px solid gray;
+}
+
+.orientation-value-search {
+  font-family: "Catamaran", sans-serif;
+}

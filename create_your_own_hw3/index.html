@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- supposed to turn off pinch zoom https://stackoverflow.com/questions/37379694/javascript-how-to-stop-pinch-zoom-multi-touch-input-attacks -->
+    <link rel="stylesheet" href="inputstyle.css" />
+    <title>HW3 SSUI</title>
+</head>
+
+<body>
+    <!-- your code should work for any number of divs -->
+    <div id="screen">
+        <div id="palette">
+            <div id="layers" width="200" height="800">
+                <h2 id="layerTitle">Layers:</h2>
+                <input type="radio" id="canvas" name="lay" value="canvas">
+                <label for="canvas" id="layerButton">Show canvas layer</label><br>
+                <input type="radio" id="svg" name="lay" value="svg" checked="true">
+                <label for="svg" id="layerButton">Show SVG layer</label><br>
+                <input type="radio" id="both" name="lay" value="both">
+                <label for="both" id="layerButton">Show both layers</label>
+            </div>
+            <div id="mode">
+                <h2 id="modeTitle">Mode:</h2>
+                <div id="modeDisabledDiv" class="disabledDiv"></div>
+                <div id="modeBody">
+                    <div class="modeItemContainer"><img src="assets/cursor.png" id="modeCursor" class="modeItem">
+                    </div>
+                    <div class="modeItemContainer selected"><img src="assets/line.png" id="modeLine" class="modeItem">
+                    </div>
+                    <div class="modeItemContainer">
+                        <div id="modeSquare" class="modeItem"></div>
+                    </div>
+                    <div class="modeItemContainer">
+                        <div id="modeCircle" class="modeItem"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="borderColor">
+                <h2 id="borderColorTitle">Border color:</h2>
+                <div id="bcDisabledDiv" class="disabledDiv"></div>
+                <div id="borderColorBody">
+                    <div class="rowOne">
+                        <div class="borderColorItemContainer">
+                            <div id="noneOptionBorder">None</div>
+                        </div>
+
+                        <div class="borderColorItemContainer">
+                            <div id="whiteOptionBorder" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="borderColorItemContainer">
+                            <div id="grayOptionBorder" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="borderColorItemContainer selected">
+                            <div id="blackOptionBorder" class="borderColorOption"></div>
+                        </div>
+                    </div>
+                    <div class="rowTwo">
+                        <div class="borderColorItemContainer">
+                            <div id="yellowOptionBorder" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="borderColorItemContainer">
+                            <div id="redOptionBorder" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="borderColorItemContainer">
+                            <div id="blueOptionBorder" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="borderColorItemContainer">
+                            <div id="greenOptionBorder" class="borderColorOption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="borderWidth">
+                <h2 id="borderWidthTitle">Border width:</h2>
+                <div id="bwDisabledDiv" class="disabledDiv"></div>
+                <div id="bwBody" class="slidecontainer">
+                    <input type="range" min="1" max="30" value="3" class="slider" id="borderWidthOption">
+                    <p id="sliderLabel">Value: 3</p>
+                </div>
+            </div>
+            <div id="fillColor">
+                <h2 id="fillColorTitle">Fill color:</h2>
+                <div id="fcDisabledDiv" class="disabledDiv"></div>
+                <div id="fillColorBody">
+                    <div class="rowOne">
+                        <div class="fillColorItemContainer">
+                            <div id="noneOptionFill">None</div>
+                        </div>
+
+                        <div class="fillColorItemContainer">
+                            <div id="whiteOptionFill" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="fillColorItemContainer">
+                            <div id="grayOptionFill" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="fillColorItemContainer">
+                            <div id="blackOptionFill" class="borderColorOption"></div>
+                        </div>
+                    </div>
+                    <div class="rowTwo">
+                        <div class="fillColorItemContainer">
+                            <div id="yellowOptionFill" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="fillColorItemContainer">
+                            <div id="redOptionFill" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="fillColorItemContainer">
+                            <div id="blueOptionFill" class="borderColorOption"></div>
+                        </div>
+
+                        <div class="fillColorItemContainer selected">
+                            <div id="greenOptionFill" class="borderColorOption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="delete">
+                <h2 id="deleteTitle">Delete:</h2>
+                <div id="deleteBody">
+                    <button id="deleteButton">Delete</button>
+                    <button id="deleteAllButton">Delete All</button>
+                </div>
+            </div>
+        </div>
+        <div id="workarea">
+            <canvas id="workarea-canvas" width="800" height="800"></canvas>
+            <svg id="workarea-svg" width="800" height="800"></svg>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="floodfill.js"></script>
+    <script src="input.js"></script>
+</body>
+
+</html>
